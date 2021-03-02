@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    min-height: 100vh;
+}
+.face{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color:yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    background-color: red;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    color: transparent;
+    width: 200px;
+    position:absolute;
+    top: 60%;
+    border-radius: 0 0 150px 150px ;
+    transition: 0.5s;
+}
+/* .face::before{ */
+    /* content:'Click for source code'; */
+    /* cursor: pointer; */
+    /* background-color: red; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* height: 100px; */
+    /* color: transparent; */
+    /* width: 200px; */
+    /* position:absolute; */
+    /* top: 60%; */
+    /* border-radius: 0 0 150px 150px ; */
+    /* transition: 0.5s; */
+/* } */
+
+.face:hover .btn{
+    border: none;
+    outline: none;
+    height: 50px;
+    color: #000000;
+    src: url('./index.html');
+    background-color: #fff;
+    border-radius: 0;
+}
+.face .eyes{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: -80px;
+}
+.eyes .eye{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+.eyes .eye::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+}
+.link{
+    text-decoration: none;
+    color: red;
+}
